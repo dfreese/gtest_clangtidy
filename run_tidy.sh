@@ -1,5 +1,7 @@
 #!/bin/bash -eux
 
+cd "$( dirname "${BASH_SOURCE[0]}" )"
+
 # Passes without issue
 clang-tidy-12 --warnings-as-errors=* split_writer_test.cc -- \
   -std=c++14 \
