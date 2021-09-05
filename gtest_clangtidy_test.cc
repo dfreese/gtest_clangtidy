@@ -24,6 +24,7 @@ class Value {
 
 class TestInterface {
  public:
+  virtual ~TestInterface() = default;
   virtual void open(Value value) = 0;
 };
 
@@ -32,7 +33,7 @@ class MockTestInterface : public TestInterface {
   MOCK_METHOD(void, open, (Value value), (override));
 };
 
-TEST(SplitWriterTest, MultipleWriteSplitsFilesWithOpenCalledFirst) {
+TEST(GtestClangTidyTest, ShowsErrorsUnderCpp17) {
   MockTestInterface mock;
 
   // Same result with both
