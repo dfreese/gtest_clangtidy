@@ -6,11 +6,4 @@ clang-tidy-12 --warnings-as-errors=* split_writer_test.cc -- \
   -isystem googletest/googlemock/include \
   -isystem googletest/googletest \
   -isystem googletest/googletest/include \
-  -iquote googletest \
-  -I/usr/lib/clang/12/include \
-  -I/usr/local/include \
-  -I/usr/include/x86_64-linux-gnu \
-  -I/usr/include \
-  -I/usr/include/c++/9 \
-  -I/usr/include/x86_64-linux-gnu/c++/9 \
-  -I/usr/include/c++/9/backward
+  -iquote googletest
